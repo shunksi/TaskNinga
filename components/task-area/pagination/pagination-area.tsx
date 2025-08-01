@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { BiFirstPage, BiLastPage } from "react-icons/bi";
-import paginationSelection from "./pagination-selection";
+import PaginationSelection from "./pagination-selection";
 
 
 
@@ -12,7 +12,7 @@ export default function PaginationArea(){
     <div className={`relative w-full overflow-hidden flex justify-between items-center mt-2`}>
         <span className="text-slate-600 text-sm"> 0 of 36 row(s) selected.</span>
         <div className="flex items-center gap-14">
-            <paginationSelection />
+            <PaginationSelection />
             <div className="flex gap-6 items-center">
                 <span className="text-sm font-medium">
                     page 1 of 4

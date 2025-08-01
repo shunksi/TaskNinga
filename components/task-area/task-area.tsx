@@ -6,7 +6,7 @@ import  TaskTable from "./task-table";
 import PriorityDropDown from '@/components/drop-downs/priority-drop-down'
 import StatusDropDown from '@/components/drop-downs/status-drop-down'
 import ViewCoulmnsDropDown from '@/components/drop-downs/view-columns-drop-down'
-
+import PaginationArea from "./pagination/pagination-area.tsx" 
 export default function TaskArea(){
     return(
         <div className="px-7 mt-5">
@@ -28,9 +28,12 @@ export default function TaskArea(){
                 </div>
             </CardHeader>
                 <CardContent>
-                    <TaskTable />
+                    <TaskTable/>
                 </CardContent>
-                <CardFooter></CardFooter>
+                <CardFooter>
+                    <PaginationArea />
+
+                </CardFooter>
             </Card>
         </div>
     )
